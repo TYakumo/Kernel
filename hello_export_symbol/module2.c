@@ -12,7 +12,8 @@ static int module2_func(void)
 EXPORT_SYMBOL(module2_func); 
 
 static int __init hello_init(void) 
-{ 
+{
+	module2_func(); 
     printk(KERN_ALERT "Hello, world(module2)\n"); 
     return 0; 
 } 
