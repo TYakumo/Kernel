@@ -4,7 +4,8 @@
 MODULE_LICENSE("Dual BSD/GPL");
 extern int module1_func(void); 
 static int module2_func(void) 
-{ 
+{
+	module1_func(); 
 	printk(KERN_INFO "Go go power rangers!\n"); 
 	return 0; 
 } 
