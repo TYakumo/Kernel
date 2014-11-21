@@ -2,7 +2,7 @@
 #include <linux/module.h> 
 
 MODULE_LICENSE("Dual BSD/GPL");
-extern module1_func(void); 
+extern int module1_func(void); 
 static int module2_func(void) 
 { 
 	printk(KERN_INFO "Go go power rangers!\n"); 
